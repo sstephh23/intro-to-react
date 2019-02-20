@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React app</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+       <script type="text/babel">
+       class Message extends React.Component {
+        constructor(props){
+           super(props);
+           this.state = {
+             date: '2/28/19'
+           }
+         }
+         render() {
+           return (
+             <div>
+             <h1> Use code: {this.props.code}! For 30% off your next purchase at Macy's</h1>
+             <h6>Valid Through: {this.state.date}</h6>
+             </div>
+           );
+         }
+       }
+       ReactDOM.render(
+         <Message code= "SALE30"/>,document.getElementById('app')
+       );
+       </script>
+  </body>
+</html> 
