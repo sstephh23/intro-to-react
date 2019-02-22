@@ -14,7 +14,7 @@
          render() {
            return (
              <div>
-             <p>single component</p>
+             <p>single component this is a test</p>
              </div>
            );
          }
@@ -24,4 +24,4 @@
        );
        </script>
   </body>
-</html> 
+</html>
