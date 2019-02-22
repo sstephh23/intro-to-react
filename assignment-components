@@ -14,7 +14,7 @@
          render() {
            return (
              <div>
-             <p>single component this is a test</p>
+             <p>single component</p>
              </div>
            );
          }
